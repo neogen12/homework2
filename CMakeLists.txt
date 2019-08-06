@@ -13,7 +13,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED on)
 add_executable(second main.cpp)
 target_link_libraries(second_test ${GTEST_LIBRARIES} pthread)
 
-install(TARGETS helloworsecond RUNTIME DESTINATION bin)
+install(TARGETS second RUNTIME DESTINATION bin)
 
 set(CPACK_GENERATOR DEB)
 
