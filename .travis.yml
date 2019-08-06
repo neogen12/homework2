@@ -3,6 +3,12 @@ before_script:
 - sudo apt-get install libgtest-dev -y
 - echo "deb http://archive.ubuntu.com/ubuntu xenial main universe" | sudo tee -a /etc/apt/sources.list
 - sudo apt-get update -qq
+- cd /usr/src/gtest
+- sudo cmake CMakeLists.txt
+- sudo make
+- sudo cp *.a /usr/lib
+- sudo ln -s /usr/lib/libgtest.a /usr/local/lib/gtest/libgtest.a
+- sudo ln -s /usr/lib/libgtest_main.a /usr/local/lib/gtest/libgtest_main.a
 script:
 - cmake .
 - cmake --build .
