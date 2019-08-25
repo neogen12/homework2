@@ -8,12 +8,12 @@ include_directories(${GTEST_INCLUDE_DIRS})
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED on)
 
-enable_testing()
+#enable_testing()
 
 add_executable(second main.cpp)
 
-add_executable(second_test homework_test.cpp)
-target_link_libraries(second_test ${GTEST_LIBRARIES} pthread)
+#add_executable(second_test homework_test.cpp)
+#target_link_libraries(second_test ${GTEST_LIBRARIES} pthread)
 
 install(TARGETS second RUNTIME DESTINATION bin)
 
