@@ -4,8 +4,7 @@ before_script:
 - sudo apt-get install libgtest-dev -y
 - sudo apt-get install cmake -y
 - sudo cmake /usr/src/gtest/CMakeLists.txt
-- cd /usr/src/gtest
-- sudo make 
+- sudo make /usr/src/gtest/
 - sudo ls /usr/src/gtest/
 - sudo cp /usr/src/gtest/*.a /usr/lib/
 script:
