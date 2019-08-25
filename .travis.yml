@@ -4,11 +4,11 @@ before_script:
 - sudo apt-get install libgtest-dev -y
 - sudo apt-get install cmake -y
 - sudo cmake /usr/src/gtest/CMakeLists.txt
-- pwd
 - cd /usr/src/gtest
 - sudo make 
 - sudo ls /usr/src/gtest/
 - sudo cp /usr/src/gtest/*.a /usr/lib/
+- cd /home/travis/build/neogen12/homework2
 script:
 - cmake .
 - cmake --build .
