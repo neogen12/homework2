@@ -22,6 +22,6 @@ set(CPACK_PACKAGE_CONTACT example@example.com)
 
 include(CPack)
 
-enable_testing()
-add_executable(second_test homework_test.cpp)
-target_link_libraries(second_test ${GTEST_LIBRARIES} pthread)
+#enable_testing()
+#add_executable(second_test homework_test.cpp)
+#target_link_libraries(second_test ${GTEST_LIBRARIES} pthread)
